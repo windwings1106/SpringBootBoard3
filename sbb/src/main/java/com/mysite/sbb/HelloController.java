@@ -11,5 +11,10 @@ public class HelloController {
 	public String hello() {
 		return "Hello Spring Boot Board";
 	}
+	
+	@GetMapping("/")
+	public String root() {
+		return "redirect:/question/list";
+	}
 
 }
